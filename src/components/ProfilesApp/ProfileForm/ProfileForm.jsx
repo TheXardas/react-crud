@@ -53,8 +53,14 @@ export default class ProfileForm extends React.Component {
 
     validate = (values) => {
         const errors = {};
-        if (!values.name) {
+        const name = escapeString(values.name);
+
+        if (!name) {
             errors.name = 'Name is required';
+        }
+
+        if (name.length > 100) {
+            errors.name = 'Name cannot be longer then 100 characters';
         }
 
         if (!values.birthDate) {

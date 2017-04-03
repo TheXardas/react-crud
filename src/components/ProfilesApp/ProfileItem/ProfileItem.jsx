@@ -29,8 +29,12 @@ export default class ProfileItem extends React.Component {
                 />
                 <div>
                     <Join>
-                        <span className={s.city}>{profile.city}</span>
-                        <span className={s.address}>{profile.address}</span>
+                        <If condition={profile.city}>
+                            <span className={s.city}>{profile.city}</span>
+                        </If>
+                        <If condition={profile.address}>
+                            <span className={s.address}>{profile.address}</span>
+                        </If>
                     </Join>
                 </div>
 

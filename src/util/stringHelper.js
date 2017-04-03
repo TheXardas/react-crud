@@ -10,5 +10,5 @@ const entityMap = {
 };
 
 export function escapeString(string) {
-    return String(string).replace(/[&<>"'`=\/]/g, (s) => entityMap[s]);
+    return String(string).replace(/[&<>"'`=\/]/g, (s) => entityMap[s]).trim();
 }
