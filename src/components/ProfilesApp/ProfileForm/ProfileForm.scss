@@ -1,0 +1,29 @@
+.input {
+  display: inline-block;
+  margin-right: 12px;
+  vertical-align: top;
+}
+
+.nameInput {
+  width: 600px;
+}
+
+.addressInput {
+  width: 410px;
+}
+
+.inputRow {
+  position: relative;
+  margin-bottom: 16px;
+  vertical-align: top;
+  display: flex;
+  justify-content: space-between;
+}
+
+.phoneInput {
+  width: 201px;
+}
+
+.button {
+  margin-right: 16px;
+}

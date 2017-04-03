@@ -1,0 +1,11 @@
+.input {
+  position: relative;
+  height: 40px;
+  font-size: 16px;
+  width: 100%;
+  padding-left: 6px;
+}
+
+.required {
+  composes: required from '../css/variables.scss';
+}

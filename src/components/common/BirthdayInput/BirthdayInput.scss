@@ -1,0 +1,20 @@
+.input {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.dayInput {
+  width: 45px;
+}
+
+.monthInput {
+  width: 150px;
+}
+
+.yearInput {
+  width: 100px
+}
+
+.required {
+  composes: required from '../css/variables.scss';
+}

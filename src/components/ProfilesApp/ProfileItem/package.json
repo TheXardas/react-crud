@@ -1,0 +1,6 @@
+{
+  "name": "ProfileItem",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ProfileItem.jsx"
+}
