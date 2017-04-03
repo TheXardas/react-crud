@@ -5,8 +5,6 @@ import ProfilesApp from './components/ProfilesApp';
 import createContext from './stores/createContext';
 
 const context = createContext();
-// TODO store/restore from/to localStorage
-
 
 const App = () => (
     <Provider {...context}>
