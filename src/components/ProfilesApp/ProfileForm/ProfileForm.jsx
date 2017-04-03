@@ -64,7 +64,7 @@ export default class ProfileForm extends React.Component {
         }
 
         if (!values.birthDate) {
-            errors.birthDate = 'Birthday is required';
+            errors.birthDate = 'Birthday is required and should be a valid date';
         }
 
         if (values.phone && !isValidPhone(values.phone)) {
@@ -100,7 +100,7 @@ export default class ProfileForm extends React.Component {
         const {profile, onCancel, className} = this.props;
         const submitText = profile.id ? 'Save' : 'Create';
         return (
-            <div className={className}>
+            <div className={classNames(s.wrapper, className)}>
                 <Form
                     formId={forms.PROFILE_EDIT_FORM + (profile.id ? profile.id : '')}
                     initialValues={this.getValues()}
