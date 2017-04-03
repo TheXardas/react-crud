@@ -102,7 +102,7 @@ export default class ProfileForm extends React.Component {
         return (
             <div className={className}>
                 <Form
-                    formId={forms.PROFILE_EDIT_FORM}
+                    formId={forms.PROFILE_EDIT_FORM + (profile.id ? profile.id : '')}
                     initialValues={this.getValues()}
                     validate={this.validate}
                     onSubmit={this.submit}

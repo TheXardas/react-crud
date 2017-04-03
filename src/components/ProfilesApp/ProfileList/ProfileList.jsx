@@ -15,6 +15,7 @@ export default class ProfileList extends React.Component {
 
     getEditHandler = (item) => () => {
         this.props.state.editProfileId = item.id;
+        this.props.state.newProfileFormVisible = false;
     };
 
     getDeleteHandler = (item) => () => {
@@ -23,6 +24,7 @@ export default class ProfileList extends React.Component {
 
     getCancelHandler = (item) => () => {
         this.props.state.editProfileId = null;
+        this.props.state.newProfileFormVisible = false;
     };
 
     render() {
