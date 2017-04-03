@@ -6,7 +6,7 @@ export default class ProfileHeader extends React.Component {
     render() {
         return (
             <div className={s.wrapper}>
-                Profile list
+                <h1>Profile list</h1>
             </div>
         );
     }
